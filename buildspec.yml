@@ -10,7 +10,10 @@ phases:
   build:
     commands:
       - echo "Build time =D"
-      - "cd .. && npm run build"
+      - ls
+      - cd ..
+      - ls
+      - "npm run build"
 artifacts:
   files:
     - "./build/*"
