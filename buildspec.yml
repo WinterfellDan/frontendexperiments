@@ -3,13 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Let's install! =D
+      - echo "Let's install! =D"
       - "npm install"
     finally:
-      - echo hopefully it installed
+      - echo "Hopefully it installed"
   build:
     commands:
-      - echo Build time =D
+      - echo "Build time =D"
       - "npm run build"
 artifacts:
   files:
