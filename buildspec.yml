@@ -1,0 +1,19 @@
+phases:
+  install:
+    commands:
+      - echo Let's install! =D
+      - "npm install"
+    finally:
+      - echo hopefully it installed
+  build:
+    commands:
+      - echo Build time =D
+      - "npm run build"
+artifacts:
+  files:
+    - "./build/*"
+    - "./node_modules"
+    - "./package.json"
+  discard-paths: no
+  s3-prefix: ExperimentsFrontend
+
